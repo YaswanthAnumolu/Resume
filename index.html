@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaswanth Anumolu | Interactive Resume</title>
+    <meta
+      name="description"
+      content="Interactive resume for Yaswanth Anumolu featuring experience, projects, skills, and recruiter-ready contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div>
+          <h1>Yaswanth Anumolu</h1>
+        </div>
+        <nav class="topnav">
+          <a href="#journey">Journey</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero panel">
+          <div class="hero-copy">
+            <p class="eyebrow">Full-Stack Data Engineer | Systems Builder</p>
+            <h2 id="hero-name"></h2>
+            <p id="hero-summary" class="hero-summary"></p>
+            <p id="hero-hook" class="hero-hook"></p>
+            <div class="hero-intro" id="hero-intro"></div>
+            <div class="hero-ribbon" id="hero-ribbon"></div>
+
+            <div class="hero-metrics" id="hero-metrics"></div>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#journey">Explore Career</a>
+              <a class="button secondary" href="#projects">Open Projects</a>
+            </div>
+          </div>
+
+          <div class="hero-side">
+            <aside class="hero-card">
+              <p class="hero-card-label">Career Snapshot</p>
+              <div id="snapshot-role" class="snapshot-role"></div>
+              <div class="hero-card-grid" id="snapshot-grid"></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel power-panel">
+          <div class="section-heading">
+            <p class="eyebrow">What I Actually Build</p>
+            <h3>Systems, not just tasks.</h3>
+          </div>
+          <div class="power-grid" id="power-grid"></div>
+        </section>
+
+        <section class="panel signal-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Signal</p>
+            <h3>Why this profile gets attention fast.</h3>
+          </div>
+          <div class="signal-grid">
+            <article class="signal-card signal-video">
+              <div class="signal-topline">
+                <p class="eyebrow">Video Resume Ready</p>
+                <span class="coming-soon">Coming Soon</span>
+              </div>
+              <h4>Structured for a short intro reel at the top of the experience.</h4>
+              <p>
+                Add a 30 to 60 second intro video here next and this page becomes much stronger for LinkedIn, recruiters,
+                and hiring managers scanning fast.
+              </p>
+            </article>
+            <article class="signal-card">
+              <p class="eyebrow">Systems Builder Story</p>
+              <h4>From analytics foundations to production data systems.</h4>
+              <p>
+                The portfolio now tells a cleaner story across banking, SaaS integrations, enterprise ETL, cloud
+                platforms, and AI-oriented project work.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="journey" class="panel story-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Career Journey</p>
+            <h3>A clickable map of roles, platforms, and impact.</h3>
+          </div>
+
+          <div class="timeline-layout">
+            <div class="timeline-list" id="timeline-list"></div>
+            <article class="timeline-detail" id="timeline-detail"></article>
+          </div>
+        </section>
+
+        <section id="projects" class="panel">
+          <div class="section-heading">
+            <p class="eyebrow">Signature Work</p>
+            <h3>Projects that show how you build data products, not just pipelines.</h3>
+          </div>
+
+          <div class="project-grid" id="project-grid"></div>
+        </section>
+
+        <section class="dual-grid">
+          <section id="skills" class="panel">
+            <div class="section-heading">
+              <p class="eyebrow">Capability Map</p>
+              <h3>Technical strengths grouped the way hiring teams think.</h3>
+            </div>
+            <div class="skill-cloud" id="skill-cloud"></div>
+          </section>
+
+          <section class="panel">
+            <div class="section-heading">
+              <p class="eyebrow">Working Style</p>
+              <h3>How you operate inside modern data teams.</h3>
+            </div>
+            <div class="principles" id="principles"></div>
+          </section>
+        </section>
+
+        <section class="dual-grid">
+          <section class="panel">
+            <div class="section-heading">
+              <p class="eyebrow">Education</p>
+              <h3>Academic foundation behind the engineering work.</h3>
+            </div>
+            <div class="credential-grid" id="education-grid"></div>
+          </section>
+
+          <section class="panel">
+            <div class="section-heading">
+              <p class="eyebrow">Credentials</p>
+              <h3>Certification and work authorization details.</h3>
+            </div>
+            <div class="credential-grid" id="credential-grid"></div>
+          </section>
+        </section>
+
+        <section class="panel recruiter-panel">
+          <div>
+            <p class="eyebrow">Recruiter View</p>
+            <h3>Why this profile stands out</h3>
+          </div>
+          <div class="recruiter-grid" id="recruiter-grid"></div>
+        </section>
+
+        <section id="contact" class="panel contact-panel">
+          <div>
+            <p class="eyebrow">Next Step</p>
+            <h3>Let's make the conversation easy.</h3>
+            <p id="contact-summary"></p>
+          </div>
+          <div class="contact-links" id="contact-links"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
